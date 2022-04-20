@@ -10,7 +10,7 @@ const result = 1 + 2 + '3';
 //The destructuring assignment is a JavaScript expression
 //that makes it possible to unpack values from arrays or properties from objects into distinct variables.
 // Let's get the month values from an array using destructuring assignment
-var [three, two, one] = ['JAN', 'FEB', 'MARCH'];
+const [three, two, one] = ['JAN', 'FEB', 'MARCH'];
 
 // console.log(one); // 'March'
 // console.log(two); // 'Feb'

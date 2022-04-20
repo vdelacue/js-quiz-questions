@@ -60,7 +60,7 @@ return parseInt(str);
 // "########"
 
 const steps = n => {
-  for(var i = 1; i <= n; i++){
+  for(let i = 1; i <= n; i++){
     let str = "\"";
     str += "#".repeat(i);
     str += " ".repeat(n-i);
@@ -69,7 +69,7 @@ const steps = n => {
   }
 }
 const sergeySteps = n => {
-  for(var i = 1; i <= n; i++){
+  for(let i = 1; i <= n; i++){
     let str = '"';
     str += "#".repeat(i);
     str += " ".repeat(n-i);
@@ -112,7 +112,7 @@ console.log(sergeySteps(4));
 //You are given 4 helper functions that take in a number and then call on the callback functions given to it. 
 //If it wasn't given a callback function then it will just console log the result of applying its assigned math to the argument._
 
-// * You only need a single function call in order to complete each prompt
+// * You only need a single function call in order to complete each prompt,
 // and you won't need to define or use any values that aren't give to you. 
 
 //For example, if you were given the number 8 as the variable `eight`, then you can console log the number 63 by
@@ -165,9 +165,9 @@ function addTwo(num, callback1, callback2, callback3) {
     else
       console.log(num  - 1);
   }
-  
-  var six = 6;
-  // Using only the functions and the `six` variable given to you, console log 4
+
+const six = 6;
+// Using only the functions and the `six` variable given to you, console log 4
   // You will not have to use a function more than once and some might not be used
   //
   // You should only need one function call to complete this.
@@ -175,10 +175,10 @@ function addTwo(num, callback1, callback2, callback3) {
   divideThree(six, square);
   divideThree(six, addTwo);
   // -------------------- End Code Area ---------------------
-  
-  
-  var four = 4;
-  // (4 - 1)^2 + 2 = 11
+
+
+const four = 4;
+// (4 - 1)^2 + 2 = 11
   // Using only the functions and the `four` variable given to you, console log 11
   // You will not have to use a function more than once and some might not be used
   //
@@ -186,10 +186,10 @@ function addTwo(num, callback1, callback2, callback3) {
   // -------------------- Your Code Here --------------------
   subtractOne(four, square, addTwo);
   // -------------------- End Code Area ---------------------
-  
-  
-  var five = 5;
-  // Using only the functions and the `five` variable given to you, console log 8
+
+
+const five = 5;
+// Using only the functions and the `five` variable given to you, console log 8
   // You will not have to use a function more than once and some might not be used
   //
   // You should only need one function call to complete this.
